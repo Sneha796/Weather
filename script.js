@@ -1,15 +1,16 @@
-const cityName=
+//searchbar
+const search=
   document.querySelector(".search") 
-
+//7 days forecast
 const forecast=
   document.querySelector(".forecast") 
-
-let city=
+//buttons
+let search-btn=
   document.getElementById("search-btn") 
 
 let location=
   document.getElementById("location") 
-
+//switch degree
 let celsius=
   document.getElementById("celsius") 
 
@@ -19,8 +20,8 @@ let fahrenheit=
 let temperature=
   document.getElementById("temperature") 
 
-let condition=
-  document.getElementById("condition1") 
+let feels-like=
+  document.getElementById("feel") 
 
 let humidity=
   document.getElementById("humidity")
@@ -30,4 +31,7 @@ let wind=
 
 let precipitation=
   document.getElementById("precipitation") 
+
+let cityName=
+  document.getElementById("city") 
 
