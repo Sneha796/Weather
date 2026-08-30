@@ -1,6 +1,6 @@
 //searchbar
 const search=
-  document.querySelector(".search") 
+  document.getElementById("searchbar") 
 //7 days forecast
 const forecast=
   document.querySelector(".forecast") 
@@ -9,7 +9,7 @@ const searchBtn=
   document.getElementById("search-btn") 
 
 const location=
-  document.getElementById("location") 
+  document.getElementById("locationBtn") 
 //switch degree
 const celsius=
   document.getElementById("celsius") 
@@ -43,3 +43,6 @@ const icon=
 
 const dateTime=
   document.getElementById("date-time") 
+
+const errorMessage=
+  document.getElementById("errorMessage") 
