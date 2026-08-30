@@ -46,3 +46,6 @@ const dateTime=
 
 const errorMessage=
   document.getElementById("errorMessage") 
+
+const forecastIcon=
+  document.getElementById("forecastIcon") 
