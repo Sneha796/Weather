@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale 1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather</title>
    <link rel ="stylesheet" href="style.css">
 </head>
@@ -10,16 +10,17 @@
   <div class="body">
     <h1>🌦Weather App</h1>
     <div class="search">
-      <input type="search-box" placeholder="Enter your city" required>
+      <input type="search" placeholder="Enter your city" required>
       <button id="search-btn">Search</button>
     </div>
     <button id="location">Use my location📍</button>
       <div id="errorMessage"></div>
        <div class="current-condition">  
         <h3 id="city">Mumbai</h3>  
-        <h3 id="climate">🌦</h3> 
+        <h3 id="icon">🌦</h3> 
         <h4 id="temperature">temperature</h4>  
-        <p id="Weather"> Rainy </p>  
+        <p id="weather"> Rainy </p> 
+        <div id="date-time">31/08/2026</div>
        </div>
       <div class="details">
         <div id="humidity">Humidity</div>
@@ -32,15 +33,13 @@
            <p id="icon">🌦</p>  
            <h4 id="temp">34°</h4>  
            <p id="condition">condition</p> 
+      </div>
        <div class="history">  </div>
         <div class="switch">
           <button id="celsius">Celsius</button>
           <button id="fahrenheit">Fahrenheit</button>
         </div>
      </div>
-    </div>
-   </div>
-</div>
 <script src="script.js"> </script>
 </body>
 </html>
