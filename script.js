@@ -7,7 +7,9 @@ const forecast=
 //buttons
 const searchBtn=
   document.getElementById("search-btn") 
-
+searchBtn.addEventListener("click", 
+function(){
+});
 const location=
   document.getElementById("locationBtn") 
 //switch degree
@@ -49,3 +51,4 @@ const errorMessage=
 
 const forecastIcon=
   document.getElementById("forecastIcon") 
+
