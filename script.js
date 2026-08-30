@@ -5,33 +5,41 @@ const search=
 const forecast=
   document.querySelector(".forecast") 
 //buttons
-let search-btn=
+const searchBtn=
   document.getElementById("search-btn") 
 
-let location=
+const location=
   document.getElementById("location") 
 //switch degree
-let celsius=
+const celsius=
   document.getElementById("celsius") 
 
-let fahrenheit=
+const fahrenheit=
   document.getElementById("fahrenheit") 
 
-let temperature=
+const temperature=
   document.getElementById("temperature") 
 
-let feels-like=
+const feelsLike=
   document.getElementById("feel") 
 
-let humidity=
+const humidity=
   document.getElementById("humidity")
 
-let wind=
+const wind=
   document.getElementById("wind") 
 
-let precipitation=
+const precipitation=
   document.getElementById("precipitation") 
 
-let cityName=
+const cityName=
   document.getElementById("city") 
 
+const weather=
+  document.getElementById("weather") 
+
+const icon=
+  document.getElementById("icon") 
+
+const dateTime=
+  document.getElementById("date-time") 
