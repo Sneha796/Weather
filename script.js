@@ -7,31 +7,6 @@ const search=
 const forecast=
   document.querySelector(".forecast") 
 //buttons
-const searchBtn=
-  document.getElementById("search-btn")
-searchBtn.addEventListener("click", function() {
-    const city = search.value;
-
-    if(city === ""){
-        errorMessage.textContent = "Enter your city";
-    }else{
-        const url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
-        fetch(url)
-       .then(response=> response.json())
-       .then(data => {cityName.textContent=data.name;
-                     temperature.textContent=data.main.temp;
-                     weather.textContent=data.weather.description;
-                     humidity.textContent=data.main.humidity;
-                     wind.textContent=data.wind.speed;
-                     precipitation.textContent=data.rain;
-                     feels_like.textContent=data.main.feels_like;
-                     icon.textContent=data.weather[0].icon;
-                     }) 
-       .catch(error => {errorMessage.textMessage="something went wrong";
-        }) 
-    }
-});
-
 const location=
   document.getElementById("locationBtn") 
 //switch degree
@@ -74,3 +49,27 @@ const errorMessage=
 const forecastIcon=
   document.getElementById("forecastIcon") 
 
+const searchBtn=
+  document.getElementById("search-btn")
+searchBtn.addEventListener("click", function() {
+    const city = search.value;
+
+    if(city === ""){
+        errorMessage.textContent = "Enter your city";
+    }else{
+        const url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+        fetch(url)
+       .then(response=> response.json())
+       .then(data => {cityName.textContent=data.name;
+                     temperature.textContent=data.main.temp;
+                     weather.textContent=data.weather[0].description;
+                     humidity.textContent=data.main.humidity;
+                     wind.textContent=data.wind.speed;
+                     precipitation.textContent=data.rain;
+                     feels_like.textContent=data.main.feels_like;
+                     icon.textContent=data.weather[0].icon;
+                     }) 
+       .catch(error => {errorMessage.textContent="something went wrong";
+        }) 
+    }
+});
