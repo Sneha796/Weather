@@ -18,8 +18,17 @@ searchBtn.addEventListener("click", function() {
         const url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
         fetch(url)
        .then(response=> response.json())
-       .catch(error => {errorMessage.text = "something went wrong";
-        }
+       .then(data => {cityName.textContent=data.name;
+                     temperature.textContent=data.main.temp;
+                     weather.textContent=data.weather.description;
+                     humidity.textContent=data.main.humidity;
+                     wind.textContent=data.wind.speed;
+                     precipitation.textContent=data.rain;
+                     feels_like.textContent=data.main.feels_like;
+                     icon.textContent=data.weather[0].icon;
+                     }) 
+       .catch(error => {errorMessage.textMessage="something went wrong";
+        }) 
     }
 });
 
