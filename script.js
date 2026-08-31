@@ -1,3 +1,5 @@
+//api
+const apiKey="743feccb8d5ad3065e930e00f53dd1d3";
 //searchbar
 const search=
   document.getElementById("searchbar") 
@@ -6,10 +8,21 @@ const forecast=
   document.querySelector(".forecast") 
 //buttons
 const searchBtn=
-  document.getElementById("search-btn") 
-searchBtn.addEventListener("click", 
-function(){
+  document.getElementById("search-btn")
+searchBtn.addEventListener("click", function() {
+    const city = search.value;
+
+    if(city === ""){
+        errorMessage.textContent = "Enter your city";
+    }else{
+        const url =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+        fetch(url)
+       .then(response=> response.json())
+       .catch(error => {errorMessage.text = "something went wrong";
+        }
+    }
 });
+
 const location=
   document.getElementById("locationBtn") 
 //switch degree
