@@ -49,7 +49,7 @@ let errorMessage=
 let forecastIcon=
   document.getElementById("forecastIcon") 
 
-let searchBtn=
+let search-Btn=
   document.getElementById("search-btn")
 searchBtn.addEventListener("click", function() {
     const city = search.value;
