@@ -1,55 +1,55 @@
 //api
 const apiKey="743feccb8d5ad3065e930e00f53dd1d3";
 //searchbar
-const search=
+let search=
   document.getElementById("searchbar") 
 //7 days forecast
-const forecast=
+let forecast=
   document.querySelector(".forecast") 
 //buttons
-const location=
+let location=
   document.getElementById("locationBtn") 
 //switch degree
-const celsius=
+let celsius=
   document.getElementById("celsius") 
 
-const fahrenheit=
+let fahrenheit=
   document.getElementById("fahrenheit") 
 
-const temperature=
+let temperature=
   document.getElementById("temperature") 
 
-const feelsLike=
+let feelsLike=
   document.getElementById("feel") 
 
-const humidity=
+let humidity=
   document.getElementById("humidity")
 
-const wind=
+let wind=
   document.getElementById("wind") 
 
-const precipitation=
+let precipitation=
   document.getElementById("precipitation") 
 
-const cityName=
+let cityName=
   document.getElementById("city") 
 
-const weather=
+let weather=
   document.getElementById("weather") 
 
-const icon=
+let icon=
   document.getElementById("icon") 
 
-const dateTime=
+let dateTime=
   document.getElementById("date-time") 
 
-const errorMessage=
+let errorMessage=
   document.getElementById("errorMessage") 
 
-const forecastIcon=
+let forecastIcon=
   document.getElementById("forecastIcon") 
 
-const searchBtn=
+let searchBtn=
   document.getElementById("search-btn")
 searchBtn.addEventListener("click", function() {
     const city = search.value;
