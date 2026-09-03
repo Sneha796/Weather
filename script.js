@@ -51,7 +51,7 @@ let forecastIcon=
 
 let search-Btn=
   document.getElementById("search-btn")
-searchBtn.addEventListener("click", function() {
+search-Btn.addEventListener("click", function() {
     const city = search.value;
 
     if(city === ""){
